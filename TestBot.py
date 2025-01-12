@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 api_url = 'https://api.groupme.com/v3/bots/post'
 
+print('HI! THIS IS RUNNING!')
+
 if dt.now().date() == dt(2025, 1, 12).date():
     bot_text = 'Your workflow identified that it was today!'
 else:
