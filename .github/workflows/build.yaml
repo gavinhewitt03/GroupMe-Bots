@@ -2,6 +2,7 @@ name: GroupMe Bot Test Workflow
 
 on:
   schedule:
+    workflow_dispatch:
     - cron: "30 21 * * *"
 
 jobs:
