@@ -8,7 +8,7 @@ api_url = 'https://api.groupme.com/v3/bots/post'
 print('HI! THIS IS RUNNING!')
 
 if dt.now().date() == dt(2025, 1, 12).date():
-    bot_text = 'Your workflow identified that it was today!'
+    bot_text = 'This is scheduled to run at 7:05. Hopefully it does!'
 else:
     bot_text = 'Your workflow did not run as intended. Try again :('
 
