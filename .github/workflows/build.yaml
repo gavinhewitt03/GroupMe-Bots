@@ -2,8 +2,7 @@ name: GroupMe Bot Test Workflow
 
 on:
   schedule:
-    - cron: "30 16 * * *"
-    condition: "date +'%Y-%m-%d' | grep -E 2025-1-12"
+    - cron: "30 21 * * *"
 
 jobs:
   run-testbot:
@@ -11,7 +10,7 @@ jobs:
     steps:
       - name: Checkout Code
       uses: actions/checkout@v3
-      
+
       - name: Setup Python
       uses: actions/setup-python@v4
       with:
