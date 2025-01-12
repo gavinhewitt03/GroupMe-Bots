@@ -21,3 +21,5 @@ data = {
 response = requests.post(api_url, json=data)
 
 print(response.status_code)
+print(response.json)
+print(response.text)
