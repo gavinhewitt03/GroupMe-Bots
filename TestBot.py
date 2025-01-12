@@ -18,4 +18,6 @@ data = {
     'text': bot_text
 }
 
-requests.post(api_url, json=data)
+response = requests.post(api_url, json=data)
+
+print(response.status_code)
