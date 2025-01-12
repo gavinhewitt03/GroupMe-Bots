@@ -2,8 +2,7 @@ name: GroupMe Bot Test Workflow
 
 on:
   schedule:
-    workflow_dispatch:
-    - cron: "30 21 * * *"
+    - cron: "42 21 * * *"
 
 jobs:
   run-testbot:
@@ -15,7 +14,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9.6'
+          python-version: '3.9.12'
       
       - name: Run Python Script
         run: |
