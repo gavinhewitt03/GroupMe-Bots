@@ -2,7 +2,7 @@ name: GroupMe Bot Test Workflow
 
 on:
   schedule:
-    - cron: "4 35 * * *"
+    - cron: "35 4 * * *"
 
 jobs:
   run-testbot:
