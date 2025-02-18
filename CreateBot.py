@@ -7,10 +7,11 @@ ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
 url = f"https://api.groupme.com/v3/bots?token={ACCESS_TOKEN}"
 
 GROUP_ID = os.getenv("GROUP_ID")
+BOT_NAME = os.getenv("BOT_NAME")
 
 data = {
     'bot': {
-        'name': 'Testing Avatar Bot',
+        'name': BOT_NAME,
         'group_id': GROUP_ID
     }   
 }
